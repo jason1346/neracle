@@ -1,0 +1,1408 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*  CCS General*/
+
+/*  Hedaer de la pantalla de inicio */
+header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    
+    
+}
+
+/*  Navbar para el header */
+
+.navegar ul{
+    list-style: none;
+    margin-left: 400px;
+    margin-top: 30px;
+   
+    
+    
+    
+
+}
+
+.navegar ul li{
+    position: relative;
+    float: left;
+    color: aliceblue;
+    
+}
+
+.navegar ul li a{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: 'Lexend Deca', Courier, monospace;
+    font-size: x-large;
+    transition: 0.3s ease-in;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Título del Header */
+header h1 {
+    margin: 0;
+    margin-top: 22px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Rubik Wet Paint', cursive;
+    width: 10px;
+    height: 0px;
+    
+    float: left;
+}
+
+/* Logo de la página */
+
+
+header img {
+    width: 55px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 30px;
+    float: left;
+
+}
+
+/*  Controles de inicio de sesion y carrito */
+.sesion a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    margin-top: 0px;
+    font-size: 27px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*  CSS para el 2do navbar abajo del header */
+
+.contenedor-busqueda{
+    width: 100%;
+    height: 100px;
+    margin-top: 80px;
+    background-color: rgb(45, 15, 85);
+    border-bottom: 1px solid whitesmoke;
+    
+}
+
+/*  Diseño de del navbar con su respectiva busqueda y reedirecciones*/
+
+.items-nav{
+    position: absolute;
+    top: 105px;
+    left: 360px;
+    text-align: center;
+    display: flex;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.fa-search{
+   
+    color: white;
+    
+    font-size: 27px;
+    
+    margin: auto;
+   
+    
+    
+}
+
+
+
+.Buscador{
+    position: absolute;
+    top: 15px;
+    left: 55px;
+    width: 0px;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    text-align: center;
+    font-family: 'Lexend Deca', Courier, monospace;
+    margin: auto;
+    
+    
+    
+}
+
+.Buscando{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(99, 15, 125);
+    text-align: center;
+    display: flex;
+    border: 1px solid rosybrown;
+   
+ 
+    
+    
+}
+
+
+.contenedor-busqueda ul{
+    list-style: none;
+    margin-left: 400px;
+    margin-top: 30px;
+    
+
+}
+
+.contenedor-busqueda ul li{
+    position: relative;
+    float: left;
+    color: aliceblue;
+    z-index: 0;
+}
+
+.contenedor-busqueda ul li a{
+    font-size: 1px;
+    margin-left: 30px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: 'Lexend Deca', Courier, monospace;
+    font-size: x-large;
+    transition: 0.3s ease-in;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom:1px ;
+    margin-top: 40px;
+    
+    
+}
+
+
+
+
+
+
+
+
+/* CSS del fondo de la parte principal de la página */
+
+
+
+.contenido-principal{
+    margin: 0;
+    padding: 0;
+    background: rgb(230,199,212);
+    background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+/* Diseño del color */
+
+.contenido-principal h1{
+    font-family: 'Lexend Deca', Courier, monospace;
+    background: #020314;
+    background: linear-gradient(to left, #020314 37%, #412BCF 55%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 40px;
+    
+   
+}
+
+
+/* Diseño de la parte de Tendencias de la página con su carrusel */
+
+.carousel{
+    top: 20px;
+    left: 280px;
+    width: 700px;   
+    border-radius: 10px;
+   
+    
+
+}
+
+.carousel-item img{
+    height: 380px;
+    background-size: cover ;
+    cursor: pointer;
+    border-radius: 40px;
+    border: 1px solid black ;
+}
+
+/* Separador para separar las partes de la página */
+
+.separator{
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 70px 70px 70px;
+    top: 100px;
+}
+
+/* Apartado de ofertas de la página */
+
+.Ofertas h1{
+    margin-top: 160px;
+}
+
+.contenedor-ofertas{
+   width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin-left: 0px;
+}
+
+
+.oferta-container{
+    height: 270px;
+    width: 200px ;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-top: 30px;
+    margin: auto;
+   
+    
+}
+
+.oferta-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+   
+    
+}
+
+.Ofertoide{
+
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    width: 40px;
+    height: 30px;
+    background-color: rgba(255, 249, 249, 0.753);
+    z-index: 1;
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+}
+
+.Ofertoide h6{
+    color: rgb(14, 11, 11);
+    font-family: 'Lexend Deca', Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.oferta-container h3{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+}
+
+.oferta{
+    top: 10px;
+}
+
+
+/* Apartado de las categorias de la página */
+
+.contenedor-categorias{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 60px;
+    height: 100%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-top: 1px solid coral;
+    border-bottom: 1px solid coral;
+    
+}
+
+.descripcion-container{
+    height: 150px;
+    width: 200px ;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-top: 50px;
+    margin: auto;
+
+    
+    
+}
+
+.descripcion-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.descripcion-container a{
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    z-index: 1;
+   
+}
+
+.descripcion{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 33px;
+    height: 30px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.descripcion-container h3{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Lexend Deca', Courier, monospace;
+    font-size: x-large;
+    
+}
+
+
+
+/* Footer de la página */
+
+
+
+footer {
+    grid-area: footer;
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0%, #1E1E1E 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #1E1E1E 0%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #1E1E1E 0%, #000000 100%);
+    border-top: 1px solid whitesmoke;
+    height: 150px;
+    margin-top: 0px;
+  
+
+
+}
+
+
+footer h4{
+    font-family: 'Rubik Wet Paint', cursive;
+    color: white;
+    padding: 20px;
+}
+
+footer h4 i{
+    font-size: large;
+}
+
+footer h5{
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+    margin-left: 20px;
+    float: left;
+}
+
+.redes a i{
+    float: right;
+    color: white;
+    font-size: 40px;
+    width: 00px;
+    margin-right: 70px ;
+    margin-top: -20px;
+}
+
+
+
+
+
+/* CSS para pagina de los juegos */
+
+.navegar-juegos ul{
+    list-style: none;
+    margin-left: 460px;
+    margin-top: 30px;
+    
+
+}
+
+
+.navegar-juegos ul li{
+    position: relative;
+    float: left;
+    color: aliceblue;
+}
+
+.navegar-juegos ul li a{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: 'Lexend Deca', Courier, monospace;
+    font-size: x-large;
+    transition: 0.3s ease-in;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.juegos-contenedor {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin-left: 0px;
+    
+    
+  }
+
+.juegos-container{
+    height: 300px;
+    width: 210px ;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+    text-align: center;
+    margin: auto;
+
+    
+ 
+  
+    
+}
+
+.juegos-container a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', Courier, monospace;
+    color: white;
+    width: 200px;
+    margin-left: 10px;
+   
+}
+
+
+.juegos-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    
+}
+
+
+
+
+
+
+.contenido-juegos{
+    margin: 0;
+    padding: 0;
+    background: rgb(230,199,212);
+    background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+   
+    
+}
+
+.contenido-juegos h1{
+
+    font-family: 'Lexend Deca', Courier, monospace;
+    background: #020314;
+    background: linear-gradient(to left, #020314 37%, #412BCF 55%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 100px;
+    
+}
+
+
+
+/* CSS para ver mas sobre el juego*/
+
+.portada-juegos{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background: rgb(230,199,212);
+    background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
+    
+   
+}
+
+.portada-juegos img{
+    width: 300px;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    border-radius: 20px;
+
+
+}
+
+.game-pay{
+    background-color: #bfe9ff;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Deca', Courier, monospace;
+    text-align: center;
+    float: right;
+    margin-right: 180px;
+    margin-top: 20px;
+    color: black;
+    
+   
+}
+
+.game-pay h4{
+    margin-left: 20px;
+    text-decoration: underline;
+    margin: 10px;
+    
+}
+
+
+.añadirCarro{
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+}
+
+.comprar{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+}
+
+
+
+
+
+
+
+
+
+/* imagen para las 2 interfaces de inicio de sesión y de crear cuenta */
+
+.img-cuenta{
+   
+    width: 750px;
+    height: 471px;
+    float: right;
+    background-size: contain;
+  
+
+}
+
+
+/* CSS Inicio de Sesión */
+
+
+
+.inicio-container{
+    background: rgb(97,102,112);
+    background: linear-gradient(180deg, rgba(97,102,112,1) 0%, rgba(0,0,0,1) 30%);
+    margin-top: 100px;
+    width: 600px;
+    height: 471px;
+}
+
+
+
+.formulario{
+    width: 350px;
+    margin: 40px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+   
+
+   
+}
+
+.formulario h5{
+    color: white;
+    margin-top: 50px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    
+}
+
+
+
+.formulario div{
+    margin-top: 40px;
+    width: 450px;
+}
+
+.formulario div a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+    font-size: small;
+    margin-top: 60px;
+    margin-left: 30px;
+    transition: 0.2s ease;
+}
+
+.inputI{
+    
+    margin-top: 10px;
+    border-color: white;
+    background-color: rgb(247, 211, 168);
+    padding: 20px;
+    border-width: 1px;
+    border-radius: 20px;
+    height: 30px;
+    width: 350px;
+    transition: 0.3s ease-in;
+    font-family: 'Lexend Deca', Courier, monospace;
+}
+
+.btnIniciar{
+    margin-top: 50px;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+}
+
+
+ 
+
+
+/* CSS Crear Cuenta */
+
+
+.registro-container{
+    background: rgb(97,102,112);
+    background: linear-gradient(180deg, rgba(97,102,112,1) 0%, rgba(0,0,0,1) 30%);
+    margin-top: 100px;
+    width: 600px;
+    height: 471px;
+}
+
+
+.formularioR{
+    width: 350px;
+    margin: 40px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+}
+
+.formularioR h6{
+    color: white;
+    margin-top: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    
+}
+
+.formularioR div{
+    margin-top: 40px;
+    width: 450px;
+}
+
+
+
+
+.inputR{
+    
+    margin-top: 10px;
+    border-color: white;
+    background-color: rgb(247, 211, 168);
+    padding: 15px;
+    border-width: 1px;
+    border-radius: 30px;
+    height: 30px;
+    width: 350px;
+    transition: 0.3s ease-in;
+    font-family: 'Lexend Deca', Courier, monospace;
+}
+
+.btnCrear{
+    margin-top: 50px;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+}
+
+
+/* CSS Carro */
+
+.carro-contenedor{
+
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+    background: rgb(230,199,212);
+    background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgb(71, 141, 222) 90%);
+
+
+}
+
+.carro-contenedor h2{
+    padding-top: 90px;
+    margin-left: 130px;
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+}
+
+.carro-container{
+    width: 600px;
+    height: 40%;
+    background: rgb(235,195,221);
+    background: linear-gradient(180deg, rgba(235,195,221,1) 0%, rgba(237,91,159,1) 88%);
+    margin-left: 120px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tabla {
+   
+    background: none;
+    width: 550px;
+    height: 200px;
+    text-align: center;
+    margin: 30px;
+   
+   
+    
+  }
+
+.id{
+    width: 100px;
+}
+
+
+.tabla td, .tabla th {
+    
+    padding: 5px 2px;
+    
+    
+    
+}
+
+.tabla th:nth-child(2){
+    border-left: 1px solid black;
+}
+.tabla th:nth-child(3){
+    border-left: 1px solid black;
+}
+
+.tabla td:nth-child(2){
+    border-left: 1px solid black;
+}
+.tabla td:nth-child(3){
+    border-left: 1px solid black;
+}
+
+.tabla tbody td {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Lexend Deca', Courier, monospace;
+    border-bottom: 1px solid black;
+}
+
+.tabla tbody td:nth-last-child(){
+    border-bottom: none;
+
+}
+
+
+.tabla thead {
+    background: none;
+    
+}
+
+.tabla thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Lexend Deca', Courier, monospace;
+    border-bottom: 1px solid black;
+    
+   
+}
+
+
+.checkout{
+    background: rgb(235,195,221);
+    background: linear-gradient(180deg, rgba(235,195,221,1) 0%, rgba(237,91,159,1) 88%);
+    float: right;
+    width: 300px;
+    height: 400px;
+    margin-top: -370px;
+    margin-right: 100px;
+    border-radius: 30px;
+   
+    
+
+}
+
+.checkout h3{
+    color: white;
+    margin-left: 38px;
+    padding-top: 10px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    text-decoration: underline;
+}
+
+.checkout h5{
+    margin-top: 30px;
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+    margin-left: 40px;
+}
+.descuento{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    background: none;
+    margin-left: 45px;
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+   
+}
+
+.precio{
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Lexend Deca', Courier, monospace;
+}
+.btnPagar{
+   
+    margin-top: 50px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+    margin-left: 30px;
+}
+ 
+
+.controles{
+    margin-top: 50px;
+   
+    
+}
+
+.controles input{
+    margin-left: 150px;
+    margin-top: 0px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #d0e87d 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+   
+
+}
+
+
+/* CSS Proceso de pago */
+
+.contenedor-payment{
+    width: 100%;
+    height: 700px;
+    background: rgb(230,199,212);
+    background: radial-gradient(circle, rgb(236, 141, 181) 11%, rgb(71, 141, 222) 90%);
+    text-align: center;
+}
+
+.contenedor-payment img{
+    float: right;
+    width: 750px;
+    height: 700px;
+    
+}
+  
+.payment{
+    background: rgb(235,195,221);
+    background: linear-gradient(180deg, rgba(235,195,221,1) 0%, rgba(237,91,159,1) 88%);
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 140px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    color: white;
+   
+
+}
+
+.payment h3{
+    margin-top: 10px ;
+   
+    text-decoration: underline;
+    
+}
+
+.payment h5{
+    margin-top: 20px ;
+   
+
+}
+.payment form select{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#numero-tarjeta{
+    border-radius: 40px;
+    height: 35px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
+
+#fecha{
+
+    border-radius: 20px;
+    height: 35px;
+    text-align: center;
+}
+
+#CVC{
+    width: 100px;
+    border-radius: 20px;
+    height: 35px;
+    text-align: center;
+}
+
+.btnEnviar{
+    margin-top: 50px;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', Courier, monospace;
+    transition: 0.2s ease-in;
+    border-color: white;
+    border-width: 1px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;            
+    box-shadow: 0 0 20px #eee;
+    margin-left: 0px;
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+/* Pseudoclases */
+
+
+.navegar ul li a:hover{
+   background-color: rgb(162, 246, 218);
+   color: black;
+
+  
+   
+}
+
+.separator::after{
+    content: "";
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 0.434);
+    margin: 40px 0;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+}
+
+.sesion a:hover{
+    background-color: rgb(162, 246, 218);
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.Buscador:focus{
+    border-color:  rgb(162, 246, 218) ;
+}
+
+ .Buscador:focus{
+    width: 520px;
+
+}
+
+
+.items-nav:hover .Buscador{
+    width: 520px;
+}
+
+.contenedor-busqueda ul li a:hover{
+    background-color: rgb(162, 246, 218);
+    color: black;
+    
+    
+    
+ }
+
+ 
+
+
+ .oferta-container img:hover{
+    height: 270px;
+    width: 210px ;
+ }
+
+ .oferta-container img:hover ~ .Ofertoide {
+    top: 88%;
+ }
+
+ .descripcion-container img:hover {
+    width: 210px ;
+    height: 160px;
+
+ }
+ .descripcion-container img:hover ~ .descripcion h3{
+    color: #bfe9ff;
+ }
+
+ .descripcion h3:hover{
+    color: #bfe9ff;
+
+ }
+
+ /* Pseuclase para navbar de los juegos */
+ .navegar-juegos ul li a:hover{
+    background-color: rgb(162, 246, 218);
+    color: black;
+   
+    
+ }
+
+ /* Pseudoclase de Juegos */
+
+ .juegos-container img:hover{
+    height: 260px;
+    width: 220px ;
+    font-size: 50px;
+ }
+ .juegos-contenedor .juegos-container img:hover ~ .juegos-contenedor .juegos-container .nombre-juego h6{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 50px;
+    color: black;
+ }
+
+/* Pseudoclases de Portada Juegos */
+
+.añadirCarro:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.comprar:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+ /* Pseudoclases de Inicio de Sesión */
+
+ .inputI:focus{
+    background-color: rgb(244, 195, 136);;
+ }
+
+ .btnIniciar:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    
+    
+ }
+
+ .formulario div a:hover{
+    color: rgb(243, 65, 142);
+    
+ }
+
+
+ /* Pseudoclases de Crear Cuenta */
+
+ .inputR:focus{
+    background-color: rgb(244, 195, 136);;
+ }
+
+ .btnCrear:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    
+    
+ }
+
+ /* Pseudoclases del apartado de checkout */
+
+ .btnPagar:hover{
+    background-position: right center;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    
+    
+ }
+
+ .descuento:focus{
+    border-bottom: 2px solid rgb(60, 44, 44);
+ }
+
+
+ /* Pseudoclase del apartado de pagar */
+ 
+ .btnEnviar:hover{
+    background-position: right center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+    
+ }
+
+
+  /* Pseudoclases de Footer */
+
+footer h5:hover{
+    color: #ff6e7f;
+    cursor: pointer;
+}
+.redes a i:hover{
+    color: #ff6e7f;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        height: 70px;
+        width: 751px;
+    }
+
+    header h1 {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    header img {
+        width: 35px;
+        height: 30px;
+        margin-right: 30px;
+        margin-top: -20px;
+
+
+    }
+
+    section {
+        margin-top: -30px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -40px;
+        width: 631px;
+    }
+
+    section img {
+        margin-top: -20px;
+        width: 500px;
+        height: 250px;
+    }
+
+    section .parrafo-2 {
+        margin-top: -10px;
+        margin-left: -30px;
+        width: 650px;
+    }
+
+
+}
