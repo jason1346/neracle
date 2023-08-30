@@ -257,20 +257,20 @@ header img {
 /* Diseño de la parte de Tendencias de la página con su carrusel */
 
 .carousel{
-    top: 20px;
-    left: 280px;
-    width: 700px;   
-    border-radius: 10px;
+    top: 0px;
+    left: 260px;
+    width: 750px;   
+
    
     
 
 }
 
 .carousel-item img{
-    height: 380px;
+    height: 390px;
     background-size: cover ;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 10px;
     border: 1px solid black ;
 }
 
@@ -527,7 +527,7 @@ footer h5{
   }
 
 .juegos-container{
-    height: 300px;
+    height: 310px;
     width: 210px ;
     position: relative;
     overflow: hidden;
