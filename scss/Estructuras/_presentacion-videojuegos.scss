@@ -1,0 +1,79 @@
+@import '../Utilidades/variables';
+
+
+.juegos-contenedor {
+	width: 100%;
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+	padding: 60px;
+	margin-left: 0px;
+	.juegos-container {
+		img {
+			&:hover {
+				~ {
+					.juegos-contenedor {
+						.juegos-container {
+							.nombre-juego {
+								h6 {
+									margin-top: 10px;
+									margin-left: 20px;
+									font-size: 50px;
+									color: $color_5;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.juegos-container {
+	height: 310px;
+	width: 210px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s ease;
+	text-align: center;
+	margin: auto;
+	a {
+		text-decoration: none;
+		font-family: $font-family_1;
+		color: $color_2;
+		width: 200px;
+		margin-left: 10px;
+	}
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 250px;
+		padding: 10px;
+		border-radius: 20px;
+		transition: 0.5s ease;
+		&:hover {
+			height: 260px;
+			width: 220px;
+			font-size: 50px;
+		}
+	}
+}
+.contenido-juegos {
+	margin: 0;
+	padding: 0;
+	background: rgb(230,199,212);
+	background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
+	width: 100%;
+	height: 100%;
+	margin-top: 100px;
+	h1 {
+		font-family: $font-family_1;
+		background: #020314;
+		background: linear-gradient(to left, #020314 37%, #412BCF 55%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		padding-top: 30px;
+		margin-top: 100px;
+	}
+}

@@ -1,0 +1,108 @@
+@import '../Utilidades/variables';
+
+.contenedor-payment {
+	width: 100%;
+	height: 700px;
+	background: rgb(230,199,212);
+	background: radial-gradient(circle, rgb(236, 141, 181) 11%, rgb(71, 141, 222) 90%);
+	text-align: center;
+	img {
+		float: right;
+		width: 750px;
+		height: 700px;
+	}
+}
+.payment {
+	background: rgb(235,195,221);
+	background: linear-gradient(180deg, rgba(235,195,221,1) 0%, rgba(237,91,159,1) 88%);
+	float: left;
+	width: 400px;
+	height: 500px;
+	margin-left: 50px;
+	border-radius: 30px;
+	border: 1px solid black;
+	margin-top: 140px;
+	font-family: $font-family_1;
+	color: $color_2;
+	h3 {
+		margin-top: 10px;
+		text-decoration: underline;
+	}
+	h5 {
+		margin-top: 20px;
+	}
+	form {
+		select {
+			width: 200px;
+			height: 30px;
+			border-radius: 20px;
+		}
+	}
+}
+#numero-tarjeta {
+	border-radius: 40px;
+	height: 35px;
+	text-align: center;
+}
+input[type="number"] {
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+input[type="date"] {
+	&::-webkit-calendar-picker-indicator {
+		background: none;
+	}
+}
+input[type=date] {
+	&:required {
+		&:invalid {
+			&::-webkit-datetime-edit {
+				color: $color_7;
+			}
+		}
+	}
+	&:focus {
+		&::-webkit-datetime-edit {
+			color: $color_5 !important;
+		}
+	}
+}
+#fecha {
+	border-radius: 20px;
+	height: 35px;
+	text-align: center;
+}
+#CVC {
+	width: 100px;
+	border-radius: 20px;
+	height: 35px;
+	text-align: center;
+}
+.btnEnviar {
+	margin-top: 50px;
+	width: 300px;
+	height: 40px;
+	border-radius: 20px;
+	font-family: $font-family_1;
+	transition: 0.2s ease-in;
+	border-color: $border-color_1;
+	border-width: 1px;
+	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	box-shadow: 0 0 20px #eee;
+	margin-left: 0px;
+	&:hover {
+		background-position: right center;
+		color: $color_12;
+		text-decoration: none;
+	}
+}

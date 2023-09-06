@@ -1,0 +1,138 @@
+@import '../Utilidades/variables';
+@import '../Components/botones';
+
+.carro-contenedor {
+	width: 100%;
+	height: 700px;
+	margin-top: 100px;
+	background: rgb(230,199,212);
+	background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgb(71, 141, 222) 90%);
+	h2 {
+		padding-top: 90px;
+		margin-left: 130px;
+		color: $color_2;
+		font-family: $font-family_1;
+	}
+}
+.carro-container {
+	width: 600px;
+	height: 40%;
+	background: rgb(235,195,221);
+	background: linear-gradient(180deg, rgba(235,195,221,1) 0%, rgba(237,91,159,1) 88%);
+	margin-left: 120px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.tabla {
+	background: none;
+	width: 550px;
+	height: 200px;
+	text-align: center;
+	margin: 30px;
+	td {
+		padding: 5px 2px;
+		&:nth-child(2) {
+			border-left: 1px solid black;
+		}
+		&:nth-child(3) {
+			border-left: 1px solid black;
+		}
+	}
+	th {
+		padding: 5px 2px;
+		&:nth-child(2) {
+			border-left: 1px solid black;
+		}
+		&:nth-child(3) {
+			border-left: 1px solid black;
+		}
+	}
+	tbody {
+		td {
+			font-size: 13px;
+			font-weight: bold;
+			color: $color_6;
+			font-family: $font-family_1;
+			border-bottom: 1px solid black;
+		}
+	}
+	thead {
+		background: none;
+		th {
+			font-size: 19px;
+			font-weight: bold;
+			color: $color_6;
+			text-align: center;
+			font-family: $font-family_1;
+			border-bottom: 1px solid black;
+		}
+	}
+}
+.id {
+	width: 100px;
+}
+.checkout {
+	background: rgb(235,195,221);
+	background: linear-gradient(180deg, rgba(235,195,221,1) 0%, rgba(237,91,159,1) 88%);
+	float: right;
+	width: 300px;
+	height: 400px;
+	margin-top: -370px;
+	margin-right: 100px;
+	border-radius: 30px;
+	h3 {
+		color: $color_2;
+		margin-left: 38px;
+		padding-top: 10px;
+		font-family: $font-family_1;
+		text-decoration: underline;
+	}
+	h5 {
+		margin-top: 30px;
+		color: $color_2;
+		font-family: $font-family_1;
+		margin-left: 40px;
+	}
+}
+.descuento {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid white;
+	background: none;
+	margin-left: 45px;
+	color: $color_2;
+	font-family: $font-family_1;
+	&:focus {
+		border-bottom: 2px solid rgb(60, 44, 44);
+	}
+}
+.precio {
+	float: right;
+	margin-top: -30px;
+	margin-right: 20px;
+	color: $color_2;
+	font-family: $font-family_1;
+}
+.btnPagar {
+	margin-top: 50px;
+	width: 250px;
+	height: 40px;
+	border-radius: 20px;
+	font-family: $font-family_1;
+	transition: 0.2s ease-in;
+	border-color: $border-color_1;
+	border-width: 1px;
+	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	box-shadow: 0 0 20px #eee;
+	margin-left: 30px;
+	&:hover {
+		background-position: right center;
+		color: $color_11;
+		text-decoration: none;
+	}
+}

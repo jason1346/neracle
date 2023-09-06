@@ -1,0 +1,45 @@
+@import '../Utilidades/variables';
+
+footer {
+	grid-area: footer;
+	background: #000000;
+	background: -moz-linear-gradient(top, #000000 0%, #1E1E1E 0%, #000000 100%);
+	background: -webkit-linear-gradient(top, #000000 0%, #1E1E1E 0%, #000000 100%);
+	background: linear-gradient(to bottom, #000000 0%, #1E1E1E 0%, #000000 100%);
+	border-top: 1px solid whitesmoke;
+	height: 150px;
+	margin-top: 0px;
+	h4 {
+		font-family: $font-family_2;
+		color: $color_2;
+		padding: 20px;
+		i {
+			font-size: large;
+		}
+	}
+	h5 {
+		color: $color_2;
+		font-family: $font-family_1;
+		margin-left: 20px;
+		float: left;
+		&:hover {
+			color: $color_13;
+			cursor: pointer;
+		}
+	}
+}
+.redes {
+	a {
+		i {
+			float: right;
+			color: $color_2;
+			font-size: 40px;
+			width: 00px;
+			margin-right: 70px;
+			margin-top: -20px;
+			&:hover {
+				color: $color_13;
+			}
+		}
+	}
+}
