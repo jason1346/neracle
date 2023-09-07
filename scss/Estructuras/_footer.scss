@@ -1,44 +1,61 @@
 @import '../Utilidades/variables';
 
 footer {
-	grid-area: footer;
 	background: #000000;
 	background: -moz-linear-gradient(top, #000000 0%, #1E1E1E 0%, #000000 100%);
 	background: -webkit-linear-gradient(top, #000000 0%, #1E1E1E 0%, #000000 100%);
 	background: linear-gradient(to bottom, #000000 0%, #1E1E1E 0%, #000000 100%);
 	border-top: 1px solid whitesmoke;
 	height: 150px;
-	margin-top: 0px;
+}
+
+.informacion{
+	width: 200px;
 	h4 {
 		font-family: $font-family_2;
 		color: $color_2;
 		padding: 20px;
-		i {
-			font-size: large;
+		display: flex;
+		i{
+			font-size: 10px;
+			margin-top: 17px;
 		}
+		
+	
 	}
-	h5 {
+	
+	a {
+		text-decoration: none;
 		color: $color_2;
 		font-family: $font-family_1;
 		margin-left: 20px;
-		float: left;
+		width: auto;
+		transition: 0.5s ease-in;
 		&:hover {
-			color: $color_13;
-			cursor: pointer;
+			color: $color_8;
+			border-bottom: 1px solid $color_8;
 		}
 	}
 }
+
+
 .redes {
+	display: flex;
+	float: right;
+	width: 200px;
+	margin-top: -30px;
+	
 	a {
+		border: 20px darkblue;
 		i {
-			float: right;
 			color: $color_2;
-			font-size: 40px;
-			width: 00px;
-			margin-right: 70px;
-			margin-top: -20px;
+			font-size: 30px;
+			margin-right: 20px;
+			margin-top: 0px;
+
 			&:hover {
-				color: $color_13;
+				color: $color_8;
+				
 			}
 		}
 	}

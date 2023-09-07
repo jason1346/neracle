@@ -7,15 +7,6 @@
 	background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
 	width: 100%;
 	height: 100%;
-	h1 {
-		font-family: $font-family_1;
-		background: #020314;
-		background: linear-gradient(to left, #020314 37%, #412BCF 55%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		text-align: center;
-		padding-top: 40px;
-	}
 }
 
 .carousel-item {
