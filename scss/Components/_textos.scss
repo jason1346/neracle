@@ -1,0 +1,35 @@
+@import '../Utilidades/variables';
+
+
+//Mixins
+@mixin mixin-titulos{
+    font-family: $font-family_1;
+	background: #020314;
+	background: linear-gradient(to left, #020314 37%, #412BCF 55%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	padding-top: 40px;
+   
+}
+
+@mixin mixin-descripcion{
+	display: flex;
+    color: white;
+    font-family: $font-family_1;
+	margin-top: 40px;
+	text-align: justify;
+	text-indent: 10px
+	
+	
+}
+
+
+.contenido-principal h1{
+    @include mixin-titulos();
+}
+
+
+.contenido-principal h2, p{
+	@include mixin-descripcion();
+}

@@ -6,13 +6,13 @@
         height: 90px;
         h1 {
             margin: 0;
-            margin-top: 30px;
+            margin-top: 25px;
             margin-left: 10px;
             color: $color_2;
             font-family: $font-family_2;
             width: 10px;
             height: 20px;
-            font-size: 25px;
+            font-size: 1.9rem;
             float: left;
         }
         img {
@@ -29,7 +29,7 @@
             
             li {
                 a {
-                    font-size: 20px;
+                    font-size: 1.3rem;
                     
                 }
             }
@@ -37,9 +37,9 @@
     }
     .sesion {
         a {
-            margin-top: -30px;
-            font-size: 20px;
-            margin-right: 10px;
+            margin-top: -32px;
+            font-size: 1.3rem;
+            margin-right: 15px;
             }
         }
 
@@ -55,17 +55,70 @@
             ul {
                 li {
                     a {
-                        margin-top: 25px;
+                        margin-top: 30px;
+                        font-size: 1.1rem;
                         
                         
                     }
                 }
             }
+
+            .items-nav {
+                margin-top: -8px;
+               
+            }
+    
+            .Buscador{
+                height: 35px;
+    
+            }
+    
+            .Buscando{
+                margin-left: 5px;
+                margin-top: 3px;
+                width: 45px;
+                height: 45px;
+            }
+            .fa-search{
+                font-size: 24px;
+            }
+    
         }
-        .items-nav {
-            margin-top: -12px;
-           
+
+        //Responsive Nosotros
+        .contenido-principal{
+            .nosotros-container{
+                margin-top: 80px;
+            }
         }
+
+        //Responsive Preguntas
+        .contenido-principal{
+            .preguntas-container{
+                margin-top: 80px;
+            }
+        }
+
+
+        //Responsive juegos
+
+        .contenido-principal{
+            .juegos-contenedor{
+                margin-top: 10px;
+            }
+        }
+       
+
+        
+
+
+       
+            
+            
+
+        
+
+
        
 
       
