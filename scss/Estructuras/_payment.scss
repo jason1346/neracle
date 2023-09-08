@@ -23,7 +23,7 @@
 	border: 1px solid black;
 	margin-top: 140px;
 	font-family: $font-family_1;
-	color: $color_2;
+	color: $color_6;
 	h3 {
 		margin-top: 10px;
 		text-decoration: underline;
@@ -93,7 +93,6 @@ input[type=date] {
 	transition: 0.2s ease-in;
 	border-color: $border-color_1;
 	border-width: 1px;
-	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
 	text-align: center;
 	text-transform: uppercase;
 	transition: 0.5s;
