@@ -40,45 +40,54 @@
 
     </header>
 
-    <main class="carro-contenedor">
-
-        <h2>Carro</h2>
+    <main class="contenido-principal">
+        
         <section class="carro-container">
+            <h2>Carro</h2>
+            <div class="tabla-container">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="id">1</td>
+                            <td>GTA V</td>
+                            <td>19.990$</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tarjeta de 20$ Playstation</td>
+                            <td>16.900$</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Red Dead Redemption 2</td>
+                            <td>30.990$</td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                    </tr>
+                </table>
+                <section class="controles">
+                    <form action="" method="post">
+                        <a href="../index.html"><input type="button" value="Seguir Comprando"></a>
+                        <a href="#"><input type="button" value="Limpiar Carrito"></a>
+                    </form>
+                </section>
 
-            <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="id">1</td>
-                        <td>GTA V</td>
-                        <td>19.990$</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Tarjeta de 20$ Playstation</td>
-                        <td>16.900$</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Red Dead Redemption 2</td>
-                        <td>30.990$</td>
-                    </tr>
-                    
-                </tbody>
-                </tr>
-            </table>
+            </div>
 
         </section>
 
 
         <section class="checkout">
-            <h3>Total del Carrito</h3>
+            <h3>Total del Carro</h3>
 
             <h5>Subtotal :</h5><h6 class="precio">67.880$</h6>
             <h5>Descuento :</h5><h6 class="precio">3.990$</h6>
@@ -93,12 +102,6 @@
 
         </section>
 
-        <section class="controles">
-            <form action="" method="post">
-                <a href="../index.html"><input type="button" value="Seguir Comprando"></a>
-                <a href="#"><input type="button" value="Limpiar Carrito"></a>
-            </form>
-        </section>
 
     </main>
 
