@@ -88,20 +88,5 @@ input[type=date] {
 	margin-top: 50px;
 	width: 300px;
 	height: 40px;
-	border-radius: 20px;
-	font-family: $font-family_1;
-	transition: 0.2s ease-in;
-	border-color: $border-color_1;
-	border-width: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	box-shadow: 0 0 20px #eee;
 	margin-left: 0px;
-	&:hover {
-		background-position: right center;
-		color: $color_12;
-		text-decoration: none;
-	}
 }

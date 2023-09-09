@@ -84,6 +84,150 @@
     
         }
 
+
+        //Responsive Carro
+
+        .carro-container {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 450px;
+            height: 600px;
+            h2{
+                position: absolute;
+                top: 100px;
+                left: 20px;
+                z-index: 1;
+                
+            }
+        
+            .tabla-container {
+                border-radius: 10px;
+                border: 1px solid $border-color_3;
+                padding: 0px;
+                margin-top: 20px;
+                width: 450px;
+                height: 230px;
+                margin-left: 20px;
+                
+        
+                .tabla {
+                    background: none;
+                    width: 430px;
+                    height: 200px;
+                    text-align: center;
+                    margin: 10px;
+        
+                    td {
+                        padding: 5px 2px;
+        
+                        &:nth-child(2) {
+                            border-left: 1px solid black;
+                        }
+        
+                        &:nth-child(3) {
+                            border-left: 1px solid black;
+                        }
+                    }
+        
+                    th {
+                        padding: 5px 2px;
+        
+                        &:nth-child(2) {
+                            border-left: 1px solid black;
+                        }
+        
+                        &:nth-child(3) {
+                            border-left: 1px solid black;
+                        }
+                    }
+        
+                    tbody {
+                        td {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: $color_6;
+                            font-family: $font-family_1;
+        
+        
+        
+                        }
+                    }
+        
+                    thead {
+                        background: none;
+        
+                        th {
+                            font-size: 19px;
+                            font-weight: bold;
+                            color: $color_6;
+                            text-align: center;
+                            font-family: $font-family_1;
+                            border-bottom: 1px solid black;
+        
+        
+                        }
+                    }
+                }
+        
+                .controles{
+                    margin-left: 35px;
+                    input{
+                        margin-left: 10px;
+                        width: 170px;
+                        font-size: 0.8rem;
+                    }
+                }
+        
+            }
+        
+            .controles{
+                margin-top: 40px;
+                margin-left: 50px;
+                justify-content: space-between;
+            }
+        
+        }
+        
+        
+        
+        .checkout {
+            height: 520px;
+            margin-top: -519px;
+            width: 260px;
+            h3 {
+                font-size: 1.5rem;
+            }
+        
+            h5 {
+                font-size: 1rem;
+                margin-left: 35px;
+            }
+
+        
+            .precio {
+                font-size: 1rem;
+                margin-left: 170px;
+            }
+           
+        
+            .descuento {
+              margin-left: 25px;
+            }
+        
+            .btnPagar {
+                margin-left: 30px;
+                width: 200px;
+            }
+        }
+
+
+        //Responsive Iniciar Sesión
+
+        .formulario{
+            top: 45px;
+        }
+
        
 
 

@@ -2,26 +2,15 @@
 
 
 
-.img-cuenta {
-	width: 750px;
-	height: 471px;
-	float: right;
-	background-size: contain;
-}
-.inicio-container {
-	background: rgb(97,102,112);
-	background: linear-gradient(180deg, rgba(97,102,112,1) 0%, rgba(0,0,0,1) 30%);
-	margin-top: 100px;
-	width: 600px;
-	height: 471px;
-}
+
 .formulario {
-	width: 350px;
+	padding: 10px;
+	width: 420px;
 	margin: 40px;
 	position: relative;
 	top: 50px;
-	left: 50px;
 	h5 {
+		text-align: center;
 		color: $color_6;
 		margin-top: 50px;
 		font-family: $font-family_1;
@@ -35,45 +24,20 @@
 			font-family: $font-family_1;
 			font-size: small;
 			margin-top: 60px;
-			margin-left: 30px;
+			margin-left: 50px;
 			transition: 0.2s ease;
 			&:hover {
-				color: $color_10;
+				border-bottom: 1px solid $color_8;
+				color: $color_8;
 			}
 		}
 	}
 }
-.inputI {
-	margin-top: 10px;
-	border-color: $border-color_1;
-	background-color: $background-color_8;
-	padding: 20px;
-	border-width: 1px;
-	border-radius: 20px;
-	height: 30px;
-	width: 350px;
-	transition: 0.3s ease-in;
-	font-family: $font-family_1;
-	&:focus {
-		background-color: $background-color_11;
-	}
-}
+
 .btnIniciar {
 	margin-top: 50px;
+	margin-left: 21px;
 	width: 350px;
 	height: 40px;
-	border-radius: 20px;
-	font-family: $font-family_1;
-	transition: 0.2s ease-in;
-	border-color: $border-color_1;
-	border-width: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	&:hover {
-		background-position: right center;
-		color: $color_9;
-		text-decoration: none;
-	}
+	
 }

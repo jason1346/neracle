@@ -1,19 +1,13 @@
 @import '../Utilidades/variables';
 
-.registro-container {
-	background: rgb(97,102,112);
-	background: linear-gradient(180deg, rgba(97,102,112,1) 0%, rgba(0,0,0,1) 30%);
-	margin-top: 100px;
-	width: 600px;
-	height: 471px;
-}
 .formularioR {
 	width: 350px;
 	margin: 40px;
 	position: relative;
 	top: 50px;
-	left: 50px;
+	left: 0px;
 	h6 {
+		text-align: center;
 		color: $color_6;
 		margin-top: 20px;
 		font-family: $font-family_1;
@@ -23,37 +17,10 @@
 		width: 450px;
 	}
 }
-.inputR {
-	margin-top: 10px;
-	border-color: $border-color_1;
-	background-color: $background-color_8;
-	padding: 15px;
-	border-width: 1px;
-	border-radius: 30px;
-	height: 30px;
-	width: 350px;
-	transition: 0.3s ease-in;
-	font-family: $font-family_1;
-	&:focus {
-		background-color: $background-color_11;
-	}
-}
+
 .btnCrear {
-	margin-top: 50px;
+	margin-top: 30px;
 	width: 350px;
 	height: 40px;
-	border-radius: 20px;
-	font-family: $font-family_1;
-	transition: 0.2s ease-in;
-	border-color: $border-color_1;
-	border-width: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	&:hover {
-		background-position: right center;
-		color: $color_9;
-		text-decoration: none;
-	}
+	
 }

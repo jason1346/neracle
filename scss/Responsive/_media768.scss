@@ -25,7 +25,7 @@
             
             li {
                 a {
-                    font-size: 0.9rem;
+                    font-size: 1.1rem;
                     padding-left: 2px;
                     padding-right: 2px;
                     
@@ -92,56 +92,21 @@
          
 
         //Responsive Ofertas
-
-        .contenido-principal {
             .oferta-container {
                 height: 220px;
                 width: 170px;
+                &:hover {
+                    transform: scale(1.05);
+                }
+
                 img {
-                    height: 200px;
                     border-radius: 18px;
-                    &:hover {
-                        height: 220px;
-                        width: 180px;
-                        ~ {
-                            .Ofertoide {
-                                top: 86%;
-                            }
-                        }
-                    }
-                }
-                h3 {
-                    text-align: center;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    font-family: $font-family_1;
-                }
-            }
-            .Ofertoide {
-                position: absolute;
-                top: 80%;
-                left: 0%;
-                width: 39px;
-                height: 29px;
-                background-color: $background-color_6;
-                z-index: 1;
-                border-radius: 10px;
-                transition: 0.5s ease;
-                h6 {
-                    color: $color_3;
-                    font-family: $font-family_1;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
                 }
             }
           
         
             
-        }
+        
         
 
         //Responsive Categorías
@@ -149,18 +114,43 @@
         .descripcion-container {
             height: 120px;
             width: 160px;
-            img {
-                height: 110px;
-                padding: 2px;
-                border-radius: 20px;
-                &:hover {
-                    width: 160px;
-                    height: 120px;
+            &:hover {
+                transform: scale(1.05);
             }
             h3 {   
                 font-size: 1.3rem;
             }
         }
+
+
+        //Responsive Juegos
+        
+        .juegos-container {
+            width: 170px;
+            height: 260px;
+            margin-top: 10px;
+            &:hover {
+                transform: scale(1.05);
+            }
+            a {
+                width: 300px;
+                font-size: 0.8rem;
+            }
+            img {
+               
+                width: 170px;
+                height: 200px;
+                border-radius: 18px;
+            }
+        }
+
+         //Responsive Iniciar Sesión
+
+         .formulario{
+            top: 35px;
+        }
+        
+        
        
     }
- }
+ 

@@ -1,139 +1,169 @@
 @import '../Utilidades/variables';
 @import '../Components/botones';
 
-.carro-contenedor {
-	width: 100%;
-	height: 700px;
-	margin-top: 100px;
-	background: rgb(230,199,212);
-	background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
-	h2 {
-		padding-top: 90px;
-		margin-left: 130px;
-		color: $color_6;
-		font-family: $font-family_1;
-	}
-}
+
 .carro-container {
-	width: 600px;
-	height: 40%;
-	background-color: $background-color_12 ;
-	margin-left: 120px;
-	border-radius: 10px;
-	position: relative;
-	overflow: hidden;
-	border: 1px solid $border-color_3;
-}
-.tabla {
-	background: none;
-	width: 550px;
-	height: 200px;
-	text-align: center;
-	margin: 30px;
-	td {
-		padding: 5px 2px;
-		&:nth-child(2) {
-			border-left: 1px solid black;
-		}
-		&:nth-child(3) {
-			border-left: 1px solid black;
-		}
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 500px;
+	height: 600px;
+	h2{
+		position: absolute;
+		top: 100px;
+		left: 20px;
+		z-index: 1;
+		
 	}
-	th {
-		padding: 5px 2px;
-		&:nth-child(2) {
-			border-left: 1px solid black;
-		}
-		&:nth-child(3) {
-			border-left: 1px solid black;
-		}
-	}
-	tbody {
-		td {
-			font-size: 13px;
-			font-weight: bold;
-			color: $color_6;
-			font-family: $font-family_1;
-			
-			
-			
-		}
-	}
-	thead {
+
+	.tabla-container {
 		background: none;
-		th {
-			font-size: 19px;
-			font-weight: bold;
-			color: $color_6;
+		background-color: $background-color_14 ;
+		border-radius: 10px;
+		border: 1px solid $border-color_3;
+		padding: 0px;
+		margin-top: 20px;
+		width: 500px;
+		height: 230px;
+		margin-left: 20px;
+		
+
+		.tabla {
+			background: none;
+			width: 480px;
+			height: 200px;
 			text-align: center;
-			font-family: $font-family_1;
-			border-bottom: 1px solid black;
-			
-			
+			margin: 10px;
+
+			td {
+				padding: 5px 2px;
+
+				&:nth-child(2) {
+					border-left: 1px solid black;
+				}
+
+				&:nth-child(3) {
+					border-left: 1px solid black;
+				}
+			}
+
+			th {
+				padding: 5px 2px;
+
+				&:nth-child(2) {
+					border-left: 1px solid black;
+				}
+
+				&:nth-child(3) {
+					border-left: 1px solid black;
+				}
+			}
+
+			tbody {
+				td {
+					font-size: 13px;
+					font-weight: bold;
+					color: $color_6;
+					font-family: $font-family_1;
+
+
+
+				}
+			}
+
+			thead {
+				background: none;
+
+				th {
+					font-size: 19px;
+					font-weight: bold;
+					color: $color_6;
+					text-align: center;
+					font-family: $font-family_1;
+					border-bottom: 1px solid black;
+
+
+				}
+			}
 		}
+
+		.id {
+			width: 100px;
+		}
+
 	}
+
+	.controles{
+		margin-top: 40px;
+		input{
+			margin-left: 30px;
+		}
+		
+		
+	}
+
 }
-.id {
-	width: 100px;
-}
+
+
+
 .checkout {
-	background-color: $background-color_12;
 	float: right;
+	display: flex;
+	flex-direction: column;
+	background-color: $background-color_13;
 	width: 300px;
-	height: 400px;
-	margin-top: -370px;
-	margin-right: 100px;
-	border-radius: 30px;
+	height: 505px;
+	margin-top: -503px;
+	margin-right: 0px;
+	border-radius: 0px;
+	border: 1px solid black;
+
 	h3 {
 		color: $color_6;
-		margin-left: 38px;
+		text-align: center;
 		padding-top: 10px;
 		font-family: $font-family_1;
 		text-decoration: underline;
+		margin-top: 20px;
 	}
+
 	h5 {
 		margin-top: 30px;
 		color: $color_6;
 		font-family: $font-family_1;
 		margin-left: 40px;
 	}
-}
-.descuento {
-	border: none;
-	outline: none;
-	border-bottom: 2px solid white;
-	background: none;
-	margin-left: 45px;
-	color: $color_6;
-	font-family: $font-family_1;
-	&:focus {
-		border-bottom: 2px solid rgb(60, 44, 44);
+
+	h6 {
+		margin-left: 190px;
 	}
-}
-.precio {
-	float: right;
-	margin-top: -30px;
-	margin-right: 20px;
-	color: $color_6;
-	font-family: $font-family_1;
-}
-.btnPagar {
-	margin-top: 50px;
-	width: 250px;
-	height: 40px;
-	border-radius: 20px;
-	font-family: $font-family_1;
-	transition: 0.2s ease-in;
-	border-color: $border-color_1;
-	border-width: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	margin-left: 30px;
-	&:hover {
-		background-position: right center;
-		color: $color_11;
-		text-decoration: none;
+
+	.precio {
+		float: right;
+		margin-top: -30px;
+		margin-right: 20px;
+		color: $color_6;
+		font-family: $font-family_1;
+	}
+
+	.descuento {
+		border: none;
+		outline: none;
+		border-bottom: 2px solid white;
+		background: none;
+		margin-left: 45px;
+		color: $color_6;
+		font-family: $font-family_1;
+
+		&:focus {
+			border-bottom: 2px solid rgb(60, 44, 44);
+		}
+	}
+
+	.btnPagar {
+		margin-top:20px;
+		width: 250px;
+		height: 40px;
+		margin-left: 25px;
 	}
 }

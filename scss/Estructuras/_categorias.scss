@@ -13,38 +13,33 @@
 	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 	border-top: 1px solid coral;
 	border-bottom: 1px solid coral;
+    
 }
 .descripcion-container {
 	height: 150px;
 	width: 200px;
 	position: relative;
 	overflow: hidden;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 	margin-top: 50px;
 	margin: auto;
+	&:hover{
+		transform: scale(1.05);
+	}
+
 	img {
+		padding: 10px;
 		object-fit: cover;
 		width: 100%;
-		height: 150px;
-		padding: 10px;
+		height: 100%;
 		border-radius: 30px;
 		transition: 0.5s ease;
-		&:hover {
-			width: 210px;
-			height: 160px;
-			~ {
-				.descripcion {
-					h3 {
-						color: $color_8;
-					}
-				}
-			}
-		}
 	}
 	a {
 		text-decoration: none;
-		color: $color_4;
+		color: $color_6;
 		z-index: 1;
+		transition: 0.1s ease;
 	}
 	h3 {
 		text-align: center;
@@ -55,21 +50,8 @@
 		font-family: $font-family_1;
 		font-size: x-large;
 	}
-}
-.descripcion {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 33px;
-	height: 30px;
-	z-index: 2;
-	border-radius: 10px;
-	h3 {
-		font-size: 1.5rem;
-		&:hover {
-			color: $color_8;
-		}
+
 	}
-}
+	
+
+

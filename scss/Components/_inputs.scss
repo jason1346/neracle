@@ -1,0 +1,19 @@
+@mixin mixin-inputs{
+    margin-top: 10px;
+	border-color: $border-color_1;
+	background-color: $background-color_8;
+	padding: 20px;
+	border-width: 1px;
+	border-radius: 5px;
+	height: 30px;
+	width: 350px;
+	transition: 0.3s ease-in;
+	font-family: $font-family_1;
+	&:focus {
+		background-color: $background-color_11;
+	}
+}
+
+.inputI, .inputR{
+    @include mixin-inputs();
+}
