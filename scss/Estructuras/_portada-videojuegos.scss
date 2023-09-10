@@ -1,37 +1,30 @@
 @import '../Utilidades/variables';
 
-.portada-juegos {
-	margin-top: 100px;
-	width: 100%;
-	height: 600px;
-	background: rgb(230,199,212);
-	background: radial-gradient(circle, rgba(230,199,212,1) 11%, rgba(148,187,233,1) 100%);
-	img {
-		width: 300px;
-		position: absolute;
-		top: 120px;
-		left: 300px;
-		border-radius: 20px;
-	}
-}
+
 .game-pay {
-	background-color: $background-color_7;
-	width: 400px;
-	height: 300px;
-	border-radius: 20px;
-	border: 1px solid black;
+	background: none;
+	width: 600px;
 	display: flex;
 	flex-direction: column;
+	justify-content: left;
 	font-family: $font-family_1;
 	text-align: center;
-	float: right;
-	margin-right: 180px;
-	margin-top: 0px;
+	margin-right: 0px;
+	margin-top: 20px;
 	color: $color_5;
+	position: relative;
+
 	h4 {
+		color: white;
 		margin-left: 20px;
 		text-decoration: underline;
-		margin: 10px;
+		margin: 15px;
+	}
+
+	p {
+		color: white;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 
@@ -39,41 +32,11 @@
 	margin-top: 0px;
 	width: 200px;
 	height: 40px;
-	border-radius: 20px;
-	font-family: $font-family_1;
-	transition: 0.2s ease-in;
-	border-color: $border-color_1;
-	border-width: 1px;
-	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
-	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	box-shadow: 0 0 20px #eee;
-	&:hover {
-		background-position: right center;
-		color: $color_9;
-		text-decoration: none;
-	}
 }
+
 .comprar {
-	margin-top: 50px;
+	margin-top: 20px;
 	width: 150px;
 	height: 40px;
-	border-radius: 20px;
-	font-family: $font-family_1;
-	transition: 0.2s ease-in;
-	border-color: $border-color_1;
-	border-width: 1px;
-	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
-	text-align: center;
-	text-transform: uppercase;
-	transition: 0.5s;
-	background-size: 200% auto;
-	box-shadow: 0 0 20px #eee;
-	&:hover {
-		background-position: right center;
-		color: $color_9;
-		text-decoration: none;
-	}
+	margin-left: 150px;
 }

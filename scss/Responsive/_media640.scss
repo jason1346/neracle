@@ -101,13 +101,21 @@
 
     }
 
+    //Responsive Titulos
+
+    .contenido-principal{
+        h1{
+            font-size: 1.5rem;
+
+        }
+    }
 
     //Responsive Tendencias
 
     .carousel-item {
         margin-top: 40px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
 
         img {
             height: 290px;
@@ -231,12 +239,9 @@
     
         }
 
-          //Responsive Iniciar Sesión
+    
 
-          .formulario{
-            top: 30px;
-            left: -10px;
-        }
+
 
 
     }
