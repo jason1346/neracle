@@ -25,7 +25,7 @@
 }
 
 
-.contenido-principal h1{
+.contenido-principal h1, .codigo-container h1{
     @include mixin-titulos();
 }
 

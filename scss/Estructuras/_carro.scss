@@ -2,24 +2,31 @@
 @import '../Components/botones';
 
 
+
+
 .carro-container {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	width: 500px;
+	background-image: url(../../img/carro.jpg);
+	background-position: center;
+	width: 100%;
 	height: 600px;
 	h2{
 		position: absolute;
 		top: 100px;
 		left: 20px;
 		z-index: 1;
+		text-decoration: underline;
 		
 	}
 
 	.tabla-container {
 		background: none;
-		background-color: $background-color_14 ;
-		border-radius: 10px;
+		background-image: url(../../img/carro2.jpg);
+	    background-size: cover;
+		background-position: center;
+		border-radius: 5px;
 		border: 1px solid $border-color_3;
 		padding: 0px;
 		margin-top: 20px;
@@ -39,11 +46,11 @@
 				padding: 5px 2px;
 
 				&:nth-child(2) {
-					border-left: 1px solid black;
+					border-left: 1px solid $border_color_1;
 				}
 
 				&:nth-child(3) {
-					border-left: 1px solid black;
+					border-left: 1px solid $border_color_1;
 				}
 			}
 
@@ -51,11 +58,11 @@
 				padding: 5px 2px;
 
 				&:nth-child(2) {
-					border-left: 1px solid black;
+					border-left: 1px solid $border_color_1;
 				}
 
 				&:nth-child(3) {
-					border-left: 1px solid black;
+					border-left: 1px solid $border_color_1;
 				}
 			}
 
@@ -80,7 +87,7 @@
 					color: $color_6;
 					text-align: center;
 					font-family: $font-family_1;
-					border-bottom: 1px solid black;
+					border-bottom: 1px solid $border_color_1;
 
 
 				}
@@ -110,13 +117,16 @@
 	float: right;
 	display: flex;
 	flex-direction: column;
-	background-color: $background-color_13;
+	background-image: url(../../img/checkout.jpg);
+	background-size: cover;
+	background-position: center;
+	transform: rotate(300deg);
 	width: 300px;
 	height: 505px;
 	margin-top: -503px;
 	margin-right: 0px;
 	border-radius: 0px;
-	border: 1px solid black;
+	border: 1px solid $border-color_1;
 
 	h3 {
 		color: $color_6;
@@ -124,7 +134,7 @@
 		padding-top: 10px;
 		font-family: $font-family_1;
 		text-decoration: underline;
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 
 	h5 {
@@ -160,6 +170,7 @@
 		}
 	}
 
+	
 	.btnPagar {
 		margin-top:20px;
 		width: 250px;
@@ -167,3 +178,6 @@
 		margin-left: 25px;
 	}
 }
+
+
+

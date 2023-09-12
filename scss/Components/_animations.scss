@@ -1,0 +1,24 @@
+@keyframes animation-pagar {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+@keyframes ct2 {
+    100% {background-position: right -100px top 0}
+  }
+
+  @keyframes ct3{
+    100%{display: none;}
+  }
+

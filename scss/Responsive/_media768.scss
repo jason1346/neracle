@@ -91,6 +91,97 @@
         }
 
 
+        //Responsive Carro
+
+        .carro-container {
+            height: 600px;
+            h2{
+                position: absolute;
+                top: 100px;
+                left: 20px;
+                z-index: 1;
+                
+            }
+        
+            .tabla-container {
+                width: 350px;
+                .tabla {
+                    width: 340px;
+                    height: 200px;
+                    margin-left: 5px;
+
+                    tbody {
+                        td {
+                            width: 40px;
+                            font-size: 0.6rem;
+                        }
+                    }
+        
+                    thead {
+                        th {
+                            font-size: 0.8rem;
+            
+                        }
+                    }
+                }
+        
+                .controles{
+                    margin-left: 35px;
+                    input{
+                        height: 25px;
+                        margin-left: 10px;
+                        width: 130px;
+                        font-size: 0.6rem;
+                        border-radius: 10px;
+                    }
+                }
+        
+            }
+        
+           
+        
+        }
+        
+        
+        
+        .checkout {
+            height: 522px;
+            margin-top: -521px;
+            width: 220px;
+            h3 {
+                font-size: 1.2rem;
+            }
+        
+            h5 {
+                margin-top: 25px;
+                font-size: 0.8rem;
+                margin-left: 35px;
+            }
+
+        
+            .precio {
+                font-size: 0.9rem;
+                margin-top: -24px;
+                margin-left: 160px;
+            }
+           
+        
+            .descuento {
+                width: 150px;
+              margin-left: 35px;
+              
+            }
+        
+            .btnPagar {
+                margin-top: 20px;
+                margin-left: 25px;
+                height: 30px;
+                width: 170px;
+                border-radius: 10px;
+            }
+        }
+
+
         //Responive Titulos
 
         .contenido-principal{

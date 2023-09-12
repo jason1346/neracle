@@ -1,0 +1,131 @@
+@import '../Utilidades/variables';
+
+
+
+.contenedor-codigo{
+    width: 100%;
+    height: 521px;
+    background-image: url(../../img/imgcodigo.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+.codigo-container{
+
+    a{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-25%);
+        font-size: 2rem;
+        text-decoration: none;
+        font-family: $font-family_1;
+        color: $color_6;
+        background-color: #766DF4;
+        border-radius: 20px;
+        padding: 1px;
+        border: 1px solid $border-color_1;
+        text-align: center;
+        width: 200px;
+
+    }
+
+    h2{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-25%);
+        font-size: 2.7rem;
+        color: white;
+        font-family: $font-family_1;
+    }
+      
+    div {
+        display: flex;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 320px;
+        height: 40px;
+        border-radius: 20px;
+        background: 
+          linear-gradient(90deg, #5d575700 ,#766DF4) left -100px top 0/100px 40px no-repeat 
+          #141417;
+        animation: ct2 1s infinite linear,ct3 3s;
+        animation-fill-mode:forwards;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        h6{
+        
+        position: relative;
+        font-family: $font-family_1;
+        color: $color_6;
+        z-index: 0;
+        }
+        
+        
+        
+      }
+
+      section{
+        
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 5px solid white;
+        border-radius: 10px;
+        animation: 3.2s ct4;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+        transition: 2s ease-in-out;
+        width: 100%;
+        
+        
+        
+
+
+        table{
+            background-image: url(../../img/yoshi.jpg);
+            background-size: cover;
+            opacity: 0.9;
+            font-size: 1.5rem;
+            color: $color_15;
+            font-family: $font-family_1;
+            width: 100%;
+            
+            tr{
+                border: 1px solid $border-color_1;
+            }
+            td{
+                border-radius: 10px;
+                padding: 10px;
+                border: 1px solid $border-color_1;
+            }
+        }
+
+      }
+
+}
+
+@keyframes ct4 {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  
+ 

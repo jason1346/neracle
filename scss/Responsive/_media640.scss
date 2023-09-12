@@ -7,7 +7,7 @@
         h1 {
             margin-top: 20px;
             font-size: 1.3rem;
-            margin-left: 5px;
+            margin-left: 0px;
 
         }
 
@@ -23,11 +23,12 @@
     .navegar {
         ul {
             padding-top: 25px;
-            margin-left: 0px;
+            margin-left: 80px;
 
 
             li {
                 a {
+                    margin-left: 15px;
                     font-size: 0.8rem;
                     padding-left: 0px;
                     padding-right: 0px;
@@ -41,8 +42,10 @@
     .sesion {
         a {
             margin-top: -20px;
-            font-size: 0.9rem;
-            margin-right: -5px;
+            font-size: 0.8rem;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 30px;
         }
     }
 
@@ -184,6 +187,126 @@
     
         }
 
+          //Responsive Iniciar Sesion
+
+          .formulario{
+            div {
+                
+                width: 400px;
+            }
+        }
+
+          //Responsive Carro
+
+          .carro-container {
+            margin-top: -100px;
+            h2{
+                position: absolute;
+                top: 50px;
+                left: 20px;
+                z-index: 1;
+                
+            }
+        
+            .tabla-container {
+                width: 270px;
+                height: 150px;
+                .tabla {
+                    width: 260px;
+                    height: 140px;
+                    margin-left: 5px;
+
+                    tbody {
+                        td {
+                            width: 40px;
+                            font-size: 0.6rem;
+                        }
+                    }
+        
+                    thead {
+                        th {
+                            font-size: 0.8rem;     
+                        }
+                    }
+                }
+        
+                .controles{
+                    margin-left: 25px;
+                    input{
+                        height: 25px;
+                        margin-left: 10px;
+                        width: 100px;
+                        font-size: 0.5rem;
+                        border-radius: 5px;
+                    }
+                }
+        
+            }
+        
+           
+        
+        }
+        
+        
+        
+        .checkout {
+            height: 432px;
+            margin-top: -431px;
+            width: 140px;
+            h3 {
+                font-size: 0.8rem;
+            }
+        
+            h5 {
+                margin-top: 25px;
+                font-size: 0.6rem;
+                margin-left: 22px;
+            }
+
+        
+            .precio {
+                font-size: 0.6rem;
+                margin-top: -21px;
+                margin-left: 90px;
+            }
+           
+        
+            .descuento {
+                width: 120px;
+                margin-left: 15px;
+              
+            }
+        
+            .btnPagar {
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 0.8rem;
+                height: 30px;
+                width: 110px;
+                border-radius: 5px;
+            }
+        }
+
+         //Responsive Codigos
+
+         .codigo-container{
+            h2{
+                font-size: 1.5rem;
+                width: 250px;
+            }
+
+            a{
+                width: 150px;
+                font-size: 1.3rem;
+            }
+
+            section{
+                table{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
         //Responsive Juegos
 
         .juegos-contenedor{
@@ -205,6 +328,46 @@
                 height: 160px;
                 border-radius: 18px;
             }
+        }
+
+
+        //Responsive Portada Juegos
+
+        .game-pay {
+            background: none;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            font-family: $font-family_1;
+            text-align: center;
+            margin-right: 0px;
+            margin-top: 20px;
+            color: $color_5;
+            position: relative;
+        
+            h4 {
+                margin-left: 20px;
+                text-decoration: underline;
+                margin: 15px;
+            }
+        
+            p {
+                font-size: 0.8rem;
+            }
+        }
+        
+        .añadirCarro {
+            font-size: 0.6rem;
+            width: 120px;
+            height: 30px;
+        }
+        
+        .comprar {
+            width: 120px;
+            height: 30px;
+            font-size: 0.6rem;
+            margin-left: 150px;
         }
 
         //Responsive Footer
@@ -237,6 +400,12 @@
                 }
             }
     
+        }
+
+        .contenedor-payment{
+            margin-top: -20px;
+            justify-content: center;
+            align-items: center;
         }
 
     

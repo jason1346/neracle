@@ -240,7 +240,130 @@
             padding: 0px;
             width: 80px;
             height: 70px;
-            border-radius: 15px;
+            border-radius: 5px;
+        }
+    }
+
+
+    //Responsive Portada Juegos
+
+    .añadirCarro {
+        font-size: 0.4rem;
+        width: 80px;
+        height: 20px;
+    }
+    
+    .comprar {
+        width: 80px;
+        height: 20px;
+        font-size: 0.4rem;
+        margin-left: 50px;
+    }
+
+     //Responsive Carro
+
+     .carro-container {
+        margin-top: -80px;
+        h2{
+            position: absolute;
+            top: 80px;
+            left: 110px;
+            z-index: 1;
+            color: black;
+            
+        }
+    
+        .tabla-container {
+            margin-left: 15px;
+            width: 270px;
+
+            .tabla {
+                width: 260px;
+
+                margin-left: 5px;
+
+                tbody {
+                    td {
+                        width: 40px;
+                        font-size: 0.6rem;
+                    }
+                }
+    
+                thead {
+                    th {
+                        font-size: 0.8rem;
+                        width: 0px;
+    
+    
+                    }
+                }
+            }
+    
+            .controles{
+                margin-left: 15px;
+                margin-top: 15px;
+                input{
+                    height: 25px;
+                    margin-left: 10px;
+                    width: 100px;
+                    font-size: 0.5rem;
+                    border-radius: 5px;
+                }
+            }
+    
+        }
+    
+       
+    
+    }
+    
+    
+    
+    .checkout {
+        position: relative;
+        margin-top: -140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        height: 140px;
+        width: 305px;
+
+        h3 {
+            font-size: 0.8rem;
+            margin-top: 0;
+        }
+    
+        h5 {
+            margin-top: 1px;
+            font-size: 0.6rem;
+            margin-left: 70px;
+        }
+
+    
+        .precio {
+            font-size: 0.6rem;
+            margin-top: -21px;
+            margin-left: 190px;
+        }
+       
+    
+        .descuento {
+            width: 80px;
+            margin-left: 85px;
+            margin-top: -160px;
+            font-size: 0.4rem;
+            border-bottom: 0.5px solid white;
+          
+        }
+    
+        .btnPagar {
+            margin-top: -40px;
+            margin-left: 60px;
+            font-size: 0.4rem;
+            height: 15px;
+            width: 40px;
+            border-radius: 5px;
         }
     }
 
@@ -259,25 +382,29 @@
             font-size: 1.1rem;
         }
         input{
+            
             width: 200px;
             height: 20px;
             padding: 12px;
         }
         a{
-            margin-left: 0px ;
             input{
                 padding: 0px;
                 height: 30px;
-                margin-left: 18px;
+                margin-left: 20px;
             }
         }
         div{
             height: 0px;
-            width: 260px;
+            width: 180px;
             a{
                 font-size: 0.7rem;
                 margin-left: 10px;
             }
+        }
+
+        .btnCorreo{
+            margin-left: 2px;
         }
     }
 
@@ -304,6 +431,96 @@
         }
 
     }
+   
+        
+
+    
+   
+
+
+    //Responsive Payment
+
+    .contenedor-payment{
+        height: 400px;
+        margin-top: 50px;
+        .payment {
+            width: 300px;
+            height: 400px;
+            font-family: $font-family_1;
+            color: $color_6;
+            h3 {
+                font-size: 1rem;
+            }
+            h5 {
+                font-size: 0.8rem;
+            }
+            form {
+                select {
+                    text-align: center;
+                    width: 200px;
+                    height: 20px;
+                    border-radius: 5px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        #numero-tarjeta {
+            padding: 2px;
+            width: 200px;
+            border-radius: 5px;
+            height: 25px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        #fecha {
+            width: 180px;
+            border-radius: 5px;
+            height: 25px;
+            text-align: center;
+        }
+        #CVC {
+            width: 100px;
+            border-radius: 5px;
+            height: 25px;
+            text-align: center;
+        }
+        .btnPayment {
+            font-size: 0.7rem;
+            width: 200px;
+            height: 25px;
+        }
+    }
+
+      //Responsive Codigos
+
+      .contenedor-codigo{
+        height: 340px;
+      }
+      .codigo-container{
+       
+        h2{
+            font-size: 1.5rem;
+            width: 250px;
+            left: 55%;
+        }
+
+        a{
+            top: 120%;
+            width: 150px;
+            font-size: 1.3rem;
+        }
+
+        section{
+            top: 70%;
+            table{
+                height: 150px;
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+
+
 
     
     footer{

@@ -21,7 +21,7 @@
 		box-shadow: 0 0 2px #eee;
 		&:hover{
 			background-position: right center;
-			color: rgb(59, 15, 154);
+			color: rgb(76, 206, 220);
 			text-decoration: none;
 		}
 		
@@ -47,10 +47,11 @@
 		background-position: right center;
 		color: $color_9;
 		text-decoration: none;
+		animation: animation-pagar 1s ease 0s infinite normal forwards;
 	}
 }
 
-.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .añadirCarro, .comprar{
+.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .añadirCarro, .comprar, .btnCorreo{
 	@include mixin-botones();
 }
 
