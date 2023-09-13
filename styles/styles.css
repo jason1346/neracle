@@ -79,7 +79,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/mw2-cuenta.jpg');
+  background-image: url(../img/mw2-cuenta.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -90,7 +90,7 @@ html {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-image: url('../img/mw2-cuenta.jpg');
+  background-image: url(../img/mw2-cuenta.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
