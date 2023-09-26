@@ -10,6 +10,7 @@
 	-webkit-text-fill-color: transparent;
 	text-align: center;
 	padding-top: 40px;
+	font-size: 2.8rem;
    
 }
 
@@ -25,11 +26,14 @@
 }
 
 
-.contenido-principal h1, .codigo-container h1{
+
+
+
+.contenido-principal .home-title{
     @include mixin-titulos();
 }
 
 
-.contenido-principal h2, p{
+.contenido-principal .nosotros-title, p{
 	@include mixin-descripcion();
 }

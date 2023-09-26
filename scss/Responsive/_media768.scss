@@ -95,13 +95,7 @@
 
         .carro-container {
             height: 600px;
-            h2{
-                position: absolute;
-                top: 100px;
-                left: 20px;
-                z-index: 1;
-                
-            }
+           
         
             .tabla-container {
                 width: 350px;
@@ -185,10 +179,11 @@
         //Responive Titulos
 
         .contenido-principal{
-            h1{
-                font-size: 1.7rem;
+            .home-title{
+                font-size: 2.4rem;
 
             }
+            
         }
          
 

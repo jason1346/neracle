@@ -51,7 +51,20 @@
 	}
 }
 
-.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .añadirCarro, .comprar, .btnCorreo{
+
+
+.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .btnCorreo{
 	@include mixin-botones();
 }
 
+
+@mixin mixin-btnJuegos{
+
+	border-radius: 20px;
+	background-image: url(../../img/assasins.jpg);
+	color: $color_6;
+}
+
+.añadirCarro, .comprar{
+	@include mixin-btnJuegos();
+}
