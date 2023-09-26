@@ -107,7 +107,7 @@
     //Responsive Titulos
 
     .contenido-principal{
-        .home-title{
+        .main-title{
             font-size: 1.5rem;
 
         }
@@ -150,6 +150,7 @@
             }
 
             h3 {
+                top: -65%;
                 font-size: 1rem;
             }
         }
@@ -181,7 +182,7 @@
     
             
             h3 {
-    
+                    
                     font-size: 1rem;
             }
     
@@ -329,6 +330,19 @@
                 border-radius: 18px;
             }
         }
+
+        //Responsive Preguntas
+
+        .preguntas-container{
+            
+            p{
+              color: $color_6;
+              padding-left: 20px;
+              padding-right: 20px;
+          
+            }
+          
+          }
 
 
         //Responsive Portada Juegos

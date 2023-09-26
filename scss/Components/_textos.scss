@@ -11,6 +11,7 @@
 	text-align: center;
 	padding-top: 40px;
 	font-size: 2.8rem;
+	width: 100%;
    
 }
 
@@ -29,7 +30,7 @@
 
 
 
-.contenido-principal .home-title{
+.contenido-principal .main-title{
     @include mixin-titulos();
 }
 
