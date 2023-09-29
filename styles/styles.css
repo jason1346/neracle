@@ -37,7 +37,7 @@ html {
   text-decoration: none;
 }
 
-.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .añadirCarro, .comprar, .btnCorreo {
+.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .btnCorreo {
   background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
   font-family: "Lexend Deca", Courier, monospace;
   background-size: 200% auto;
@@ -49,14 +49,21 @@ html {
   border-width: 1px;
   box-shadow: 0 0 10px #eee;
 }
-.btnPagar:hover, .btnIniciar:hover, .btnCrear:hover, .btnEnviar:hover, .añadirCarro:hover, .comprar:hover, .btnCorreo:hover {
+.btnPagar:hover, .btnIniciar:hover, .btnCrear:hover, .btnEnviar:hover, .btnCorreo:hover {
   background-position: right center;
   color: #fff2f2;
   text-decoration: none;
   animation: animation-pagar 1s ease 0s infinite normal forwards;
 }
 
-.contenido-principal h1, .codigo-container h1 {
+.añadirCarro, .comprar {
+  border-radius: 20px;
+  background-image: url(../img/diablo.jpg);
+  background-position: center;
+  color: #FFFFFF;
+}
+
+.contenido-principal .main-title {
   font-family: "Lexend Deca", Courier, monospace;
   background: #020314;
   background: linear-gradient(to left, #020314 37%, #412BCF 55%);
@@ -64,9 +71,11 @@ html {
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding-top: 40px;
+  font-size: 2.8rem;
+  width: 100%;
 }
 
-.contenido-principal h2, p {
+.contenido-principal .nosotros-title, p {
   display: flex;
   color: white;
   font-family: "Lexend Deca", Courier, monospace;
@@ -83,7 +92,7 @@ html {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 571px;
+  height: 100vh;
 }
 
 .portada, .contenedor-payment {
@@ -94,7 +103,7 @@ html {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 571px;
+  height: 100vh;
   text-align: center;
 }
 
@@ -347,7 +356,7 @@ header img {
   position: absolute;
 }
 
-.Ofertas h1 {
+.Ofertas h3 {
   margin-top: 160px;
 }
 
@@ -381,7 +390,7 @@ header img {
 .oferta-container h3 {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: -10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FFFFFF;
@@ -425,6 +434,9 @@ header img {
   border-top: 1px solid coral;
   border-bottom: 1px solid coral;
 }
+.contenedor-categorias:hover h3 {
+  color: #FFFFFF;
+}
 
 .descripcion-container {
   height: 150px;
@@ -462,6 +474,10 @@ header img {
   font-size: x-large;
 }
 
+.tarjeta {
+  top: 40px;
+}
+
 .controles input {
   width: 200px;
   height: 40px;
@@ -484,7 +500,7 @@ header img {
   text-decoration: none;
 }
 
-.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .añadirCarro, .comprar, .btnCorreo {
+.btnPagar, .btnIniciar, .btnCrear, .btnEnviar, .btnCorreo {
   background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
   font-family: "Lexend Deca", Courier, monospace;
   background-size: 200% auto;
@@ -496,11 +512,18 @@ header img {
   border-width: 1px;
   box-shadow: 0 0 10px #eee;
 }
-.btnPagar:hover, .btnIniciar:hover, .btnCrear:hover, .btnEnviar:hover, .añadirCarro:hover, .comprar:hover, .btnCorreo:hover {
+.btnPagar:hover, .btnIniciar:hover, .btnCrear:hover, .btnEnviar:hover, .btnCorreo:hover {
   background-position: right center;
   color: #fff2f2;
   text-decoration: none;
   animation: animation-pagar 1s ease 0s infinite normal forwards;
+}
+
+.añadirCarro, .comprar {
+  border-radius: 20px;
+  background-image: url(../img/diablo.jpg);
+  background-position: center;
+  color: #FFFFFF;
 }
 
 .carro-container {
@@ -514,10 +537,12 @@ header img {
 }
 .carro-container h2 {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 20px;
   z-index: 1;
   text-decoration: underline;
+  color: rgb(172, 235, 239);
+  font-family: "Lexend Deca", Courier, monospace;
 }
 .carro-container .tabla-container {
   background: none;
@@ -543,24 +568,24 @@ header img {
   padding: 5px 2px;
 }
 .carro-container .tabla-container .tabla td:nth-child(2) {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
 }
 .carro-container .tabla-container .tabla td:nth-child(3) {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
 }
 .carro-container .tabla-container .tabla th {
   padding: 5px 2px;
 }
 .carro-container .tabla-container .tabla th:nth-child(2) {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
 }
 .carro-container .tabla-container .tabla th:nth-child(3) {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
 }
 .carro-container .tabla-container .tabla tbody td {
   font-size: 13px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: black;
   font-family: "Lexend Deca", Courier, monospace;
 }
 .carro-container .tabla-container .tabla thead {
@@ -569,10 +594,10 @@ header img {
 .carro-container .tabla-container .tabla thead th {
   font-size: 19px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   font-family: "Lexend Deca", Courier, monospace;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 .carro-container .tabla-container .id {
   width: 100px;
@@ -593,7 +618,7 @@ header img {
   background-position: center;
   transform: rotate(300deg);
   width: 300px;
-  height: 505px;
+  height: 503px;
   margin-top: -503px;
   margin-right: 0px;
   border-radius: 0px;
@@ -722,6 +747,9 @@ header img {
 .juegos-contenedor h1 {
   width: 100%;
 }
+.juegos-contenedor:hover h6, .juegos-contenedor:hover h3 {
+  color: #FFFFFF;
+}
 
 .juegos-container {
   height: 310px;
@@ -750,6 +778,15 @@ header img {
   border-radius: 20px;
   transition: 0.5s ease;
 }
+.juegos-container h3 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lexend Deca", Courier, monospace;
+  font-size: x-large;
+}
 
 .game-pay {
   background: none;
@@ -764,7 +801,7 @@ header img {
   color: black;
   position: relative;
 }
-.game-pay h4 {
+.game-pay h2 {
   color: white;
   margin-left: 20px;
   text-decoration: underline;
@@ -774,6 +811,11 @@ header img {
   color: white;
   padding-left: 30px;
   padding-right: 30px;
+}
+.game-pay h3, .game-pay h4 {
+  color: #FFFFFF;
+  font-size: 1rem;
+  color: #FFFFFF;
 }
 
 .añadirCarro {
@@ -870,13 +912,14 @@ footer {
 .informacion {
   width: 200px;
 }
-.informacion h4 {
+.informacion h5 {
   font-family: "Rubik Wet Paint", cursive;
   color: #FFFFFF;
   padding: 20px;
   display: flex;
+  font-size: 1.5rem;
 }
-.informacion h4 i {
+.informacion h5 i {
   font-size: 10px;
   margin-top: 17px;
 }
@@ -941,28 +984,29 @@ footer {
   width: 100%;
   height: 100%;
 }
-.preguntas .preguntas-container {
+
+.preguntas-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 100px;
+  padding-top: 100px;
 }
-.preguntas .preguntas-container h1 {
-  display: flex;
-}
-.preguntas .preguntas-container h2 {
-  margin-top: 40px;
+.preguntas-container h3 {
+  text-decoration: underline;
+  color: #FFFFFF;
+  padding-top: 20px;
 }
 
 .contenedor-codigo {
   width: 100%;
-  height: 521px;
-  background-image: url(../img/imgcodigo.jpg);
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgb(230, 199, 212);
+  background: radial-gradient(circle, rgb(230, 199, 212) 11%, rgb(148, 187, 233) 100%);
 }
 
 .codigo-container a {
@@ -989,6 +1033,7 @@ footer {
   font-size: 2.7rem;
   color: white;
   font-family: "Lexend Deca", Courier, monospace;
+  text-decoration: underline;
 }
 .codigo-container div {
   display: flex;
@@ -1026,21 +1071,19 @@ footer {
   width: 100%;
 }
 .codigo-container section table {
-  background-image: url(../img/yoshi.jpg);
+  background-image: url(../img/carro2.jpg);
   background-size: cover;
+  background-position: center;
   opacity: 0.9;
   font-size: 1.5rem;
-  color: rgb(12, 9, 96);
+  color: black;
   font-family: "Lexend Deca", Courier, monospace;
   width: 100%;
-}
-.codigo-container section table tr {
-  border: 1px solid white;
 }
 .codigo-container section table td {
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 @keyframes ct4 {
@@ -1113,12 +1156,6 @@ footer {
     display: flex;
     justify-content: left;
     height: 600px;
-  }
-  .carro-container h2 {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    z-index: 1;
   }
   .carro-container .tabla-container {
     width: 450px;
@@ -1248,12 +1285,6 @@ footer {
   .carro-container {
     height: 600px;
   }
-  .carro-container h2 {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    z-index: 1;
-  }
   .carro-container .tabla-container {
     width: 350px;
   }
@@ -1308,8 +1339,8 @@ footer {
     width: 170px;
     border-radius: 10px;
   }
-  .contenido-principal h1 {
-    font-size: 1.7rem;
+  .contenido-principal .main-title {
+    font-size: 2.4rem;
   }
   .oferta-container {
     height: 220px;
@@ -1317,6 +1348,9 @@ footer {
   }
   .oferta-container:hover {
     transform: scale(1.05);
+  }
+  .oferta-container h3 {
+    top: -20%;
   }
   .oferta-container img {
     border-radius: 18px;
@@ -1350,6 +1384,12 @@ footer {
   }
   .formulario {
     top: 35px;
+  }
+  .game-pay h3 {
+    font-size: 0.8rem;
+  }
+  .game-pay h4 {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1419,7 +1459,7 @@ footer {
   .contenedor-busqueda .fa-search {
     font-size: 1.2rem;
   }
-  .contenido-principal h1 {
+  .contenido-principal .main-title {
     font-size: 1.5rem;
   }
   .carousel-item {
@@ -1446,6 +1486,7 @@ footer {
     transform: scale(1.1);
   }
   .oferta-container h3 {
+    top: -65%;
     font-size: 1rem;
   }
   .Ofertoide {
@@ -1479,7 +1520,7 @@ footer {
   }
   .carro-container h2 {
     position: absolute;
-    top: 50px;
+    top: 90px;
     left: 20px;
     z-index: 1;
   }
@@ -1561,13 +1602,21 @@ footer {
   .juegos-container:hover {
     transform: scale(1.05);
   }
-  .juegos-container a {
-    font-size: 0.7rem;
+  .juegos-container a h6 {
+    font-size: 0.6rem;
   }
   .juegos-container img {
     width: 110px;
     height: 160px;
     border-radius: 18px;
+  }
+  .juegos-container h3 {
+    font-size: 1rem;
+  }
+  .preguntas-container p {
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .game-pay {
     background: none;
@@ -1584,7 +1633,6 @@ footer {
   }
   .game-pay h4 {
     margin-left: 20px;
-    text-decoration: underline;
     margin: 15px;
   }
   .game-pay p {
@@ -1700,7 +1748,7 @@ footer {
   .contenedor-busqueda .fa-search {
     font-size: 0.6rem;
   }
-  .contenido-principal h1 {
+  .contenido-principal .main-title {
     font-size: 1rem;
   }
   .carousel-item {
@@ -1715,8 +1763,8 @@ footer {
   .separator {
     top: 20px;
   }
-  .Ofertas h1 {
-    margin-top: -50px;
+  .Ofertas .main-title {
+    margin-top: 50px;
   }
   .oferta-container {
     margin-top: -20px;
@@ -1728,11 +1776,12 @@ footer {
   .oferta-container:hover {
     transform: scale(1.1);
   }
-  .oferta-container img {
-    border-radius: 15px;
-  }
   .oferta-container h3 {
     font-size: 0.4rem;
+    top: -180%;
+  }
+  .oferta-container img {
+    border-radius: 15px;
   }
   .Ofertoide {
     top: 75%;
@@ -1766,6 +1815,10 @@ footer {
   .descripcion-container h3 {
     font-size: 0.5rem;
   }
+  .tarjeta {
+    margin-top: -80px;
+    top: 120px;
+  }
   .juegos-contenedor {
     margin-top: 0px;
   }
@@ -1778,13 +1831,11 @@ footer {
     transform: scale(1.05);
   }
   .juegos-container a {
-    margin-top: -10px;
-    font-size: 0.3rem;
+    margin-top: 10px;
   }
   .juegos-container a h6 {
-    margin-top: 0px;
-    color: black;
-    width: 300px;
+    font-size: 0.3rem;
+    margin-top: 5px;
   }
   .juegos-container img {
     background-color: aqua;
@@ -1792,6 +1843,9 @@ footer {
     width: 80px;
     height: 70px;
     border-radius: 5px;
+  }
+  .juegos-container h3 {
+    font-size: 0.7rem;
   }
   .añadirCarro {
     font-size: 0.4rem;
@@ -1809,10 +1863,9 @@ footer {
   }
   .carro-container h2 {
     position: absolute;
-    top: 80px;
-    left: 110px;
+    top: 100px;
+    left: 120px;
     z-index: 1;
-    color: black;
   }
   .carro-container .tabla-container {
     margin-left: 15px;
@@ -1974,26 +2027,6 @@ footer {
     font-size: 0.7rem;
     width: 200px;
     height: 25px;
-  }
-  .contenedor-codigo {
-    height: 340px;
-  }
-  .codigo-container h2 {
-    font-size: 1.5rem;
-    width: 250px;
-    left: 55%;
-  }
-  .codigo-container a {
-    top: 120%;
-    width: 150px;
-    font-size: 1.3rem;
-  }
-  .codigo-container section {
-    top: 70%;
-  }
-  .codigo-container section table {
-    height: 150px;
-    font-size: 0.7rem;
   }
   footer .informacion {
     width: 140px;
