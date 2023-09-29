@@ -14,18 +14,35 @@
 	color: $color_5;
 	position: relative;
 
-	h4 {
+	h2 {
 		color: white;
 		margin-left: 20px;
 		text-decoration: underline;
 		margin: 15px;
 	}
 
-	p {
+	p{
 		color: white;
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+
+	h3,h4{
+		color: $color_6;
+		font-size: 1rem;
+		color: $color_6;
+		
+		
+	
+	}
+
+
+		
+
+	
+	
+
+	
 }
 
 .añadirCarro {

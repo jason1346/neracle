@@ -321,13 +321,20 @@
                 transform: scale(1.05);
             }
             a {
-                font-size: 0.7rem;
+                h6{
+                    font-size: 0.6rem;
+                }
+               
             }
             img {
                
                 width: 110px;
                 height: 160px;
                 border-radius: 18px;
+            }
+
+            h3{ 
+                font-size: 1rem;
             }
         }
 
@@ -362,7 +369,6 @@
         
             h4 {
                 margin-left: 20px;
-                text-decoration: underline;
                 margin: 15px;
             }
         
