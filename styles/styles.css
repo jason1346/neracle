@@ -58,7 +58,7 @@ html {
 
 .añadirCarro, .comprar {
   border-radius: 20px;
-  background-image: url(../../img/diablo.jpg);
+  background-image: url(../img/diablo.jpg);
   background-position: center;
   color: #FFFFFF;
 }
@@ -88,7 +88,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../img/mw2-cuenta-min.jpg);
+  background-image: url(../img/mw2-cuenta-min.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -99,7 +99,7 @@ html {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-image: url(../../img/mw2-cuenta-min.jpg);
+  background-image: url(../img/mw2-cuenta-min.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -521,7 +521,7 @@ header img {
 
 .añadirCarro, .comprar {
   border-radius: 20px;
-  background-image: url(../../img/diablo.jpg);
+  background-image: url(../img/diablo.jpg);
   background-position: center;
   color: #FFFFFF;
 }
@@ -530,7 +530,7 @@ header img {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-image: url(../../img/carro.jpg);
+  background-image: url(../img/carro.jpg);
   background-position: center;
   width: 100%;
   height: 600px;
@@ -546,7 +546,7 @@ header img {
 }
 .carro-container .tabla-container {
   background: none;
-  background-image: url(../../img/carro2.jpg);
+  background-image: url(../img/carro2.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -613,7 +613,7 @@ header img {
   float: right;
   display: flex;
   flex-direction: column;
-  background-image: url(../../img/checkout.jpg);
+  background-image: url(../img/checkout.jpg);
   background-size: cover;
   background-position: center;
   transform: rotate(300deg);
@@ -956,7 +956,7 @@ footer {
 }
 
 .nosotros {
-  background-image: url(../../img/imgnosotros.jpg);
+  background-image: url(../img/imgnosotros.jpg);
   background-size: cover;
   position: relative;
   width: 100%;
